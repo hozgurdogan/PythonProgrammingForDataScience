@@ -1,39 +1,46 @@
-# Karakter Dizileri (Strings)
+# Character Strings (Karakter Dizileri)
 
 #####################################
 
-print("Jhon")
+print("John")  # İngilizce ismi yazdırır
 
-print('jhon')
+print('john')  # Küçük harfle ismi yazdırır
 
-"Jhon"
+"John"  # Bu satırda John string'i yazılır ama herhangi bir çıktı üretmez
 
-name= "Jhon"
-print(name)
+name = "John"  # 'name' değişkenine 'John' değerini atar
+print(name)  # 'name' değişkeninin değerini yazdırır
 
 
 ###################################
-# Multi Rows Strings Arrays
+# Multi-Line Strings (Çok Satırlı Karakter Dizileri)
 ###################################
 
+# Uzun bir string'i üç tırnak işareti kullanarak birden çok satıra yayabiliriz
+long_str = """Veri Yapıları: Hızlı Özet,
+Sayılar (Numbers): int, float, complex,
+Karakter Dizileri (Strings): str,
+Liste, Sözlük (Dictionary), Demet (Tuple), Küme (Set),
+Mantıksal Değerler (TRUE-FALSE): bool"""
 
-long_Str=""" Veri Yapıları : Hızlı Özet,
-Sayılar (Numbers) : int ,float, complex,
-Karakter Dizileri (Strings) : str,
-List , Disctionary , Tuple ,Set,
-Boolean (TRUE-FALSE)": bool"""
+# Character string elements access (Karakter dizisi elemanlarına erişim)
 
-#Karater dizileri elemalarına ulaşmak 
+name = "Name"  # 'name' değişkenine 'Name' değerini atar
 
-name="Name"
+name[0]  # 'N' harfine erişir
+name[1]  # 'a' harfine erişir
+name[2]  # 'm' harfine erişir
+name[3]  # 'e' harfine erişir
 
-name[0]
-name[1]
-name[2]
-name[3]
+# Slicing in character strings (Karakter dizilerinde dilimleme)
+name = "John"  # 'name' değişkenine 'John' değerini atar
+name[0:2]  # 'Jo' çıktısını üretir (0. ve 1. indeks arası karakterleri alır)
 
-# Karatker dizilerinde Slice işlemi
-name="John"
-name[0:2]
+long_str[0:10]  # 'Veri Yapıla' çıktısını üretir (ilk 10 karakter)
 
-long_Str[0:10]
+######################################
+# Searching for characters within a string (String içinde karakter arama)
+######################################
+"Veri" in long_str  # long_str içinde 'Veri' ifadesini arar, True veya False döner
+
+"veri" in long_str  # Büyük/küçük harf duyarlıdır, bu nedenle False döner

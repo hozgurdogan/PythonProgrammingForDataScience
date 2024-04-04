@@ -1,65 +1,37 @@
 # -*- coding: utf-8 -*-
 
-# Data Structers Quick Sum
+# Data Structures Quick Summary (Veri Yapılarına Hızlı Bir Bakış)
 
-#int
-x=12
-type(x)
+# Integer (Tam sayı)
+number = 12  # Sayı
+print(type(number))  # Veri tipini yazdırma
 
-#float
-x=12.2
-type(x)
+# Float (Kayan noktalı sayı)
+number = 12.2  # Ondalıklı Sayı
+print(type(number))  # Veri tipini yazdırma
 
-#String
-x="Sting Data"
-type (x)
+# String (Metin)
+text = "String Data"  # Metin Verisi
+print(type(text))  # Veri tipini yazdırma
 
-#Bollean
-x=True
-type(x)
-3==2
+# Boolean (Mantıksal Değer)
+is_true = True  # Doğru mu?
+print(type(is_true))  # Veri tipini yazdırma
+print(3 == 2)  # 3 eşit midir 2'ye? (False döner)
 
-#List
+# List (Liste)
+cryptocurrencies = ["btc", "eth", "xrp"]  # Kripto para birimleri
+print(type(cryptocurrencies))  # Veri tipini yazdırma
 
-x=["btc","eth","xrp"]
-type(x)
+# Dictionary (Sözlük)
+# Key, value (Anahtar, değer)
+person = {"Name": "Ozgur", "Age": 22}  # Kişi
+print(type(person))  # Veri tipini yazdırma
 
-#dictionary
-#Key,value
-x={"Name":"Ozgur", "Age":22}
-type(x)
+# Tuple (Demet)
+languages = ("python", "ml", "ds")  # Programlama dilleri
+print(type(languages))  # Veri tipini yazdırma
 
-
-#Tuple
-x=("ptyhon","ml","ds")
-type(x)
-
-
-#Set
-x={"ptyhon","ml","ds"}
-type(x)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Set (Küme)
+skills = {"python", "ml", "ds"}  # Yetenekler
+print(type(skills))  # Veri tipini yazdırma

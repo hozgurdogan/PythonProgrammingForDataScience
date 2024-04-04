@@ -1,27 +1,26 @@
 # -*- coding: utf-8 -*-
 
 ######################################
-# Nums (Sayılar )
+# Numbers (Sayılar)
 ######################################
 
-a=3
-b=10.5
+number1 = 3  # Birinci sayı
+number2 = 10.5  # İkinci sayı
 
-1 * 3
-1 / 7
-a * b
+1 * 3  # Çarpma işlemi
+1 / 7  # Bölme işlemi
+number1 * number2  # İki sayının çarpımı
 
-a ** 2
+number1 ** 2  # number1'in karesi
 
 #####################################
-#           Type Parse
+#           Type Conversion (Tip Dönüşümü)
 #####################################
-#Float-> int 
-int(b)
+# Float to int (Ondalıklı sayıdan tam sayıya)
+int(number2)  # number2'yi tam sayıya çevirme
 
-float(a)
+float(number1)  # number1'i ondalıklı sayıya çevirme
 
-c =  a * b / 10
+result = number1 * number2 / 10  # İşlemin sonucu
 
-int(c)
-
+int(result)  # Sonucu tam sayıya çevirme
