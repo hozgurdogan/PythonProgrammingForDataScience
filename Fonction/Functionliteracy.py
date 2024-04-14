@@ -38,4 +38,4 @@ print(iki_ile_carp(sayi1))  # Fonksiyonu çağırarak sonucu yazdırma (Calling 
 
 # Kullanıcıdan iki sayı alarak toplama işlemi yapma (Getting two numbers from the user to perform addition)
 sayi2 = int(input("Lütfen toplama yapmak için bir sayı daha giriniz:"))
-print(summer(sayi1, sayi2))  # İki sayıyı toplayan fonksiyonu çağırma ve sonucu yazdırma (Calling the function to sum two numbers and printing the result).
+print(summer(sayi1, sayi2))  # İki sayıyı toplayan fonksiyonu çağırma ve sonucu yazdırma (Calling the function to sum two numbers and printing the result)..
