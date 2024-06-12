@@ -51,7 +51,7 @@ list4 = [new_salary(salary*2) if salary<3000 else new_salary(salary*0.2)  for sa
 for salary in list4:
     print("List Maas :" + str(salary ))
 
-# Örnek 6: List comprehension ile string elemanları işleme uygulama
+# Örnek 6: List comprehension ile string elemanları işleme uygulama.
 students = ["Jhon" , "Mark" , "Venessa" , "Mariam"]
 students_no = ["Jhon" , "Venessa"]
 
