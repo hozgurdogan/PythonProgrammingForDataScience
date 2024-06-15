@@ -64,3 +64,49 @@ df.columns = ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.
 
 # Yeni kolon adlarını kontrol etme
 print(df.columns)
+
+##############
+# Practice 3
+# Amaç key'i string ,value'su aşağıdaki gibi bir liste olan sözlük oluşturmak
+# Sadece sayısal değişkenler için yapmak istiyoruz
+
+################
+
+# Output:
+# {'total': ['mean', 'min', 'max', 'var'],
+# 'speeding': ['mean', 'min', 'max', 'var'],
+# 'alcohol': ['mean', 'min', 'max', 'var'],
+# 'not_distracted': ['mean', 'min', 'max', 'var'],
+# 'no_previous': ['mean', 'min', 'max', 'var'],
+# 'ins_premium': ['mean', 'min', 'max', 'var'],
+# 'ins_losses': ['mean', 'min', 'max', 'var']}
+
+import seaborn as sns
+
+# Veri setini yükleme
+df = sns.load_dataset("car_crashes")
+
+# Kolon isimlerini kontrol etme
+df.columns
+
+# Sayısal verileri sütunlardan çekme
+num_cols = [col for col in df.columns if df[col].dtype.kind in 'if']
+print(num_cols)
+
+# Yeni bir sözlük oluşturma
+soz = {}
+agg_list = ["mean", "min", "max", "sum"]
+
+# Her bir sayısal kolon için işlem yapma
+for col in num_cols:
+    soz[col] = agg_list
+print(soz)
+
+# List comprehension kullanarak daha kısa bir yöntem
+new_dict = {col: agg_list for col in num_cols}
+
+# Sayısal kolonların ilk birkaç satırını gösterme
+print(df[num_cols].head())
+
+# Agg fonksiyonu ile işlemleri gerçekleştirme
+df[num_cols].agg(new_dict)
