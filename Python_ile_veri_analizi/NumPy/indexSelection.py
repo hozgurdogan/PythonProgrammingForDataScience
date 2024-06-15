@@ -10,6 +10,6 @@ print(m)
 
 print(m[1,1])
 
-#1.satırın tüm satünlarını seç
+#1.satırın tüm satünlarını sec
 
 print(m[0:1,:])
