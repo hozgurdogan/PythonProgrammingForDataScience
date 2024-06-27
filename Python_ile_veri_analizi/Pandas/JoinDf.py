@@ -14,7 +14,7 @@ df1 = pd.DataFrame(m, columns=["var1", "var2", "var3"])
 # df1'in değerlerine 99 ekleyerek yeni bir DataFrame oluşturma
 df2 = df1 + 99
 
-# İki DataFrame'i alt alta birleştirme ve indeksleri sıfırlama
+# İki DataFrame'i alt alta birleştirme , indeksleri sıfırlama
 result = pd.concat([df1, df2], ignore_index=True)
 
 # Birleştirilmiş DataFrame'i yazdırma
