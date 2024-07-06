@@ -79,5 +79,5 @@ def regression_model():
 # build the model
 model = regression_model()
 
-# fit the mode
+# fit the model
 model.fit(predictors_norm, target, validation_split=0.3, epochs=100, verbose=2)
