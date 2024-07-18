@@ -110,3 +110,68 @@ print(df[num_cols].head())
 
 # Agg fonksiyonu ile işlemleri gerçekleştirme
 df[num_cols].agg(new_dict)
+
+
+
+numbers = [1,2,3,4,5,6,7,8,9]
+
+# verilen listedtedeki elemanların karaelerinden oluşan yeni bir liste oluştıralım
+
+list2 = [num**2 for  num in numbers]
+
+print(list2)
+
+
+# eğer listede ki eleman çiftse verilen listedtedeki elemanların karaelerinden oluşan yeni bir liste oluştıralım
+
+
+list3 = [num**2 for  num in numbers if num%2==0]
+
+print(list3)
+
+
+
+
+
+# verilen listedeki elemanlardan 4 den büyük ve çift olanaların karesini alan liste
+
+list4 = [num**2 for num in numbers if num > 4 and num%2 == 0]
+
+print(list4)
+
+
+numbers = [1,2,3,4]
+letters ="abcd"
+
+# [(1,a),(2,b),.... ] şeklinde giden bir liste oluştur
+
+list5 = [(num,letter) for num in numbers for letter in letters]
+
+print(list5)
+
+
+
+
+
+
+
+
+
+
+liste1 = [1,2,3,4,5,6,7,8,9]
+liste2 = [2,3,6,9,5]
+
+# birinci listede bulunupu 2. listede olamayan rakamların karesinden oluşan bir liste oluşturalım
+
+list3 = [i*i for i in liste1 if i not in liste2 ]
+
+print(list3)
+
+
+
+# verilen listede ki elemanları tek tek alan bir liste oluşturalım
+
+list_ = [[1,2,3] , [4,5,6,7] , [8,9,10,11,12]]
+
+list2 = [j  for num in list_ for j in num ]
+print(list2)
